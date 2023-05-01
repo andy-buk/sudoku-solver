@@ -102,9 +102,29 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 }
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
   .container {
-    margin-top: 10rem;
+    margin-top: 100px;
+    padding: 1rem;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 5px;
+    box-shadow: none;
+  }
+  #sudoku-grid {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+  input {
+    font-size: 3.5vw;
+  }
+  .sudoku-info h2 {
+    font-size: 1.5rem;
   }
 }
 
